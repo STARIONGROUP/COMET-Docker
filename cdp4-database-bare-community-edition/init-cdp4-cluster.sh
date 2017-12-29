@@ -1,5 +1,4 @@
 #!/bin/bash
-
 psql -U postgres -p 5432 --command="CREATE USER cdp4 WITH PASSWORD 'cdp4';"
 psql -U postgres -p 5432 --command="GRANT pg_signal_backend TO cdp4;"
 psql -U postgres -p 5432 --command="CREATE DATABASE cdp4manage WITH OWNER = cdp4 ENCODING 'UTF-8';"
