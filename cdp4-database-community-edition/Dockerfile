@@ -1,4 +1,4 @@
-FROM postgres:9.6.14
+FROM postgres:12.3
 MAINTAINER s.gerene@rheagroup.com
 
 COPY LICENSE /
