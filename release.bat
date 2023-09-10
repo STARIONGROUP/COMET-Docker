@@ -54,13 +54,9 @@ ECHO Building images...
 ECHO.
 
 REM build and tag
-docker build -f cdp4-database-bare-community-edition\Dockerfile -t cdp4-test-database-community-edition:%version% -t cdp4-test-database-community-edition:latest .\cdp4-database-bare-community-edition
-docker tag cdp4-test-database-community-edition:%version% rheagroup/cdp4-test-database-community-edition:%version%
-docker tag cdp4-test-database-community-edition:latest rheagroup/cdp4-test-database-community-edition:latest
+DOCKER_BUILDKIT=1 docker build -f cdp4-database-bare-community-edition\Dockerfile -t rheagroup/cdp4-test-database-community-edition:%version% -t rheagroup/cdp4-test-database-community-edition:latest .\cdp4-database-bare-community-edition
 
-docker build -f cdp4-database-community-edition\Dockerfile -t cdp4-database-community-edition:%version% -t cdp4-database-community-edition:latest .\cdp4-database-community-edition
-docker tag cdp4-database-community-edition:%version% rheagroup/cdp4-database-community-edition:%version%
-docker tag cdp4-database-community-edition:latest rheagroup/cdp4-database-community-edition:latest
+DOCKER_BUILDKIT=1 docker build -f cdp4-database-community-edition\Dockerfile -t rheagroup/cdp4-database-community-edition:%version% -t rheagroup/cdp4-database-community-edition:latest .\cdp4-database-community-edition
 
 IF %dry% equ true GOTO End
 
