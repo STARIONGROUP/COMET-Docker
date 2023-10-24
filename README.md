@@ -12,7 +12,7 @@ The docker image is available on [docker hub](https://hub.docker.com/r/rheagroup
 
 ## COMET Database Bare - Community Edition
 
-The `COMET Database Bare - Community Edition` image is based on the official PostgreSQL 12.16 image. It containss a mimimal test COMET SQL Schema that is required to execute the [ECSS-E-TM-10-25 Annex C.2 Integration Test suite](https://github.com/RHEAGROUP/ecss-10-25-annexc-integration-tests). 
+The `COMET Database Bare - Community Edition` image is based on the official PostgreSQL 16-alpine image. It containss a mimimal test COMET SQL Schema that is required to execute the [ECSS-E-TM-10-25 Annex C.2 Integration Test suite](https://github.com/RHEAGROUP/ecss-10-25-annexc-integration-tests). 
 
 ## COMET Services Community Edition
 
