@@ -6,13 +6,13 @@ This is the Git repository of the official `COMET Community Edition` database do
 
 ## COMET Database - Community Edition
 
-The `COMET Database Community Edition` image is based on the official PostgreSQL 12.16 image and contains the COMET SQL schema required to run the COMET Webservices Community Edition.
+The `COMET Database Community Edition` image is based on the official PostgreSQL **16-alpine** image and contains the COMET SQL schema required to run the COMET Webservices Community Edition.
 
 The docker image is available on [docker hub](https://hub.docker.com/r/rheagroup/cdp4-database-community-edition/)
 
 ## COMET Database Bare - Community Edition
 
-The `COMET Database Bare - Community Edition` image is based on the official PostgreSQL 16-alpine image. It containss a mimimal test COMET SQL Schema that is required to execute the [ECSS-E-TM-10-25 Annex C.2 Integration Test suite](https://github.com/RHEAGROUP/ecss-10-25-annexc-integration-tests). 
+The `COMET Database Bare - Community Edition` image is based on the official PostgreSQL **16-alpine** image. It containss a mimimal test COMET SQL Schema that is required to execute the [ECSS-E-TM-10-25 Annex C.2 Integration Test suite](https://github.com/RHEAGROUP/ecss-10-25-annexc-integration-tests). 
 
 ## COMET Services Community Edition
 

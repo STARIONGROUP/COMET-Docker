@@ -1,6 +1,5 @@
-FROM postgres:12.16
+FROM postgres:16-alpine
 LABEL maintainer="s.gerene@rheagroup.com"
 
 COPY LICENSE /
-RUN apt-get update && apt-get install -y postgresql-contrib
-COPY cdp4server.sql /docker-entrypoint-initdb.d
+COPY 01-cdp4server.sql /docker-entrypoint-initdb.d
