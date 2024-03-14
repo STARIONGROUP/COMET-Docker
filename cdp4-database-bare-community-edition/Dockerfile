@@ -1,4 +1,4 @@
-FROM postgres:16-alpine
+FROM postgres:16.2-alpine3.19
 LABEL maintainer="s.gerene@rheagroup.com"
 
 COPY LICENSE /
