@@ -1,6 +1,6 @@
 # How to contribute
 
-We would like to start with saying thank you for wanting to contribute to COMET-Docker codebase. We want to keep it as easy as possible to contribute changes that get things working in your environment. There are a few guidelines that we need contributors to follow so that we have a chance of keeping on top of things.
+We would like to start with saying thank you for wanting to contribute to CDP4-COMET-Docker codebase. We want to keep it as easy as possible to contribute changes that get things working in your environment. There are a few guidelines that we need contributors to follow so that we have a chance of keeping on top of things.
 
 - [Making Changes](#making-changes)
   - [Handling Updates from Upstream/Development](#handling-updates-from-upstreamdevelopment)
@@ -11,7 +11,7 @@ We would like to start with saying thank you for wanting to contribute to COMET-
 
 1. [Fork](http://help.github.com/forking/) on GitHub
 1. Clone your fork locally
-1. Configure the upstream repo (`git remote add upstream git://github.com/RHEAGROUP/COMET-Docker.git`) 
+1. Configure the upstream repo (`git remote add upstream git://github.com/STARIONGROUP/COMET-Docker.git`) 
 1. Checkout development
 1. Create a local branch (`git checkout -b myBranch`) from development
 1. Work on your feature
@@ -23,7 +23,7 @@ You should **never** work on a clone of master or development, and you should **
 
 ### Handling Updates from Upstream/Development
 
-While you're working away in your branch it's quite possible that your upstream development (most likely the canonical COMET-Docker version) may be updated. If this happens you should:
+While you're working away in your branch it's quite possible that your upstream development (most likely the canonical CDP4-COMET-Docker version) may be updated. If this happens you should:
 
 1. [Stash](http://git-scm.com/book/en/Git-Tools-Stashing) any un-committed changes you need to
 1. `git checkout development`
@@ -44,9 +44,9 @@ When you're ready to go you should confirm that you are up to date and rebased w
 
 1. `git push origin myBranch`
 1. Send a descriptive [Pull Request](https://help.github.com/articles/creating-a-pull-request/) on GitHub - making sure you have selected the correct branch in the GitHub UI!
-1. Wait for @samatrhea to merge your changes in.
+1. Wait for @samatstarion to merge your changes in.
 
-And remember; **A pull-request with tests is a pull-request that's likely to be pulled in.** :grin: Bonus points if you document your feature in our [wiki](https://github.com/RHEAGROUP/COMET-Docker/wiki) once it has been pulled in
+And remember; **A pull-request with tests is a pull-request that's likely to be pulled in.** :grin: Bonus points if you document your feature in our [wiki](https://github.com/STARIONGROUP/COMET-Docker/wiki) once it has been pulled in
 
 ## Style Guidelines
 
