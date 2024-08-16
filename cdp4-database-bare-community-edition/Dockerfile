@@ -9,5 +9,3 @@ LABEL maintainer="s.gerene@stariongroup.eu" \
 COPY LICENSE /LICENSE
 
 COPY init-cdp4-cluster.sh /docker-entrypoint-initdb.d
-
-RUN chown postgres:postgres /LICENSE /docker-entrypoint-initdb.d/01-cdp4server.sql
