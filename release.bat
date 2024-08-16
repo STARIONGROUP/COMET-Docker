@@ -42,21 +42,14 @@ docker rmi stariongroup/cdp4-test-database-community-edition:%version%
 docker rmi cdp4-database-community-edition:%version%
 docker rmi stariongroup/cdp4-database-community-edition:%version%
 
-REM remove local latest if exists
-docker rmi  cdp4-test-database-community-edition:latest
-docker rmi  stariongroup/cdp4-test-database-community-edition:latest
-
-docker rmi  cdp4-database-community-edition:latest
-docker rmi  stariongroup/cdp4-database-community-edition:latest
-
 ECHO.
 ECHO Building images...
 ECHO.
 
 REM build and tag
-DOCKER_BUILDKIT=1 docker build -f cdp4-database-bare-community-edition\Dockerfile -t stariongroup/cdp4-test-database-community-edition:%version% -t stariongroup/cdp4-test-database-community-edition:latest .\cdp4-database-bare-community-edition
+DOCKER_BUILDKIT=1 docker build -f cdp4-database-bare-community-edition\Dockerfile -t stariongroup/cdp4-test-database-community-edition:%version% .\cdp4-database-bare-community-edition
 
-DOCKER_BUILDKIT=1 docker build -f cdp4-database-community-edition\Dockerfile -t stariongroup/cdp4-database-community-edition:%version% -t stariongroup/cdp4-database-community-edition:latest .\cdp4-database-community-edition
+DOCKER_BUILDKIT=1 docker build -f cdp4-database-community-edition\Dockerfile -t stariongroup/cdp4-database-community-edition:%version% .\cdp4-database-community-edition
 
 IF %dry% equ true GOTO End
 
@@ -66,10 +59,8 @@ ECHO.
 
 REM push
 docker push stariongroup/cdp4-test-database-community-edition:%version%
-docker push stariongroup/cdp4-test-database-community-edition:latest
 
 docker push stariongroup/cdp4-database-community-edition:%version%
-docker push stariongroup/cdp4-database-community-edition:latest
 
 :End
 
