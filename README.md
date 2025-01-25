@@ -6,13 +6,13 @@ This is the Git repository of the official `CDP4-COMET Community Edition` databa
 
 ## CDP4-COMET Database - Community Edition
 
-The `CDP4-COMET Database Community Edition` image is based on the official PostgreSQL **16-alpine** image and contains the CDP4-COMET SQL schema required to run the CDP4-COMET Webservices Community Edition.
+The `CDP4-COMET Database Community Edition` image is based on the official PostgreSQL **17-alpine** image and contains the CDP4-COMET SQL schema required to run the CDP4-COMET Webservices Community Edition.
 
 The docker image is available on [docker hub](https://hub.docker.com/r/stariongroup/cdp4-database-community-edition/)
 
 ## CDP4-COMET Database Bare - Community Edition
 
-The `CDP4-COMET Database Bare - Community Edition` image is based on the official PostgreSQL **16-** image. It containss a mimimal test CDP4-COMET SQL Schema that is required to execute the [ECSS-E-TM-10-25 Annex C.2 Integration Test suite](https://github.com/STARIONGROUP/ecss-10-25-annexc-integration-tests). 
+The `CDP4-COMET Database Bare - Community Edition` image is based on the official PostgreSQL **17-** image. It containss a mimimal test CDP4-COMET SQL Schema that is required to execute the [ECSS-E-TM-10-25 Annex C.2 Integration Test suite](https://github.com/STARIONGROUP/ecss-10-25-annexc-integration-tests). 
 
 ## CDP4-COMET Services Community Edition
 
