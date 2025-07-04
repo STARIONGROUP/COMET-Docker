@@ -47,9 +47,12 @@ ECHO Building images...
 ECHO.
 
 REM build and tag
-DOCKER_BUILDKIT=1 docker build -f cdp4-database-bare-community-edition\Dockerfile -t stariongroup/cdp4-test-database-community-edition:%version% .\cdp4-database-bare-community-edition
 
-DOCKER_BUILDKIT=1 docker build -f cdp4-database-community-edition\Dockerfile -t stariongroup/cdp4-database-community-edition:%version% .\cdp4-database-community-edition
+set DOCKER_BUILDKIT=1
+
+docker build -f cdp4-database-bare-community-edition\Dockerfile -t stariongroup/cdp4-test-database-community-edition:%version% .\cdp4-database-bare-community-edition
+
+docker build -f cdp4-database-community-edition\Dockerfile -t stariongroup/cdp4-database-community-edition:%version% .\cdp4-database-community-edition
 
 IF %dry% equ true GOTO End
 
