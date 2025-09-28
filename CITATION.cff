@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+
+title: "CDP4-COMET-Docker"
+abstract: "The official CDP4-COMET database docker images"
+version: "4.2.0"
+date-released: "2025-09-28"
+url: "https://github.com/STARIONGROUP/COMET-Docker"
+
+authors:
+  - given-names: "Sam"
+    family-names: "Gerené"
+    affiliation: "Starion Group S.A."
+    orcid: "https://orcid.org/0009-0000-1848-550X"
+  - given-names: "Alex"
+    family-names: "Vorobiev"
+    affiliation: "Starion Group S.A."
+  - given-names: "Alexender"
+    family-names: "van Delft"
+    affiliation: "Starion Group S.A."
+  - name: "Starion Group S.A."
+    affiliation: "Starion Group S.A."
+    given-names: "MBSE Competence Area Developers"
+
+repository-code: "https://github.com/STARIONGROUP/COMET-Docker"
+license: "AGPL-3.0"
+
+preferred-citation:
+  type: software
+  title: "CDP4-COMET-Docker"
+  authors:
+    - given-names: "Sam"
+      family-names: "Gerené"
+      affiliation: "Starion Group S.A."
+      orcid: "https://orcid.org/0009-0000-1848-550X"
+    - given-names: "Alex"
+      family-names: "Vorobiev"
+      affiliation: "Starion Group S.A."
+    - given-names: "Alexender"
+      family-names: "van Delft"
+      affiliation: "Starion Group S.A."
+    - name: "Starion Group S.A."
+      affiliation: "Starion Group S.A."
+      given-names: "MBSE Competence Area Developers"
+  version: "28.3.2"
+  url: "https://github.com/STARIONGROUP/COMET-Docker"
+  date-released: "2025-09-28"
