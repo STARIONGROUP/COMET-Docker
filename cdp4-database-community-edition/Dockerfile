@@ -1,9 +1,9 @@
 # Use an official PostgreSQL runtime as a parent image
-FROM postgres:17.6-alpine3.22
+FROM postgres:18.1-alpine3.23
 
 # Set the maintainer label and description
 LABEL maintainer="s.gerene@stariongroup.eu" \
-    version="4.2.0" \
+    version="5.0.0" \
     description="PostgreSQL Docker image with initialization script for CDP4-COMET server" \
     license="AGPL" \
     url="https://www.stariongroup.eu/services-solutions/system-engineering/concurrent-design/cdp4-comet/" \
@@ -11,8 +11,8 @@ LABEL maintainer="s.gerene@stariongroup.eu" \
     vendor="Starion Group" \
     support="info@stariongroup.eu" \
     tier="backend" \
-    postgresversion="17.6" \
-    osversion="alpine3.22"
+    postgresversion="18.1" \
+    osversion="alpine3.23"
 
 COPY LICENSE /LICENSE
 

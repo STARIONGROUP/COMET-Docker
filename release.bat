@@ -14,20 +14,7 @@ GOTO End
 
 :Setup
 
-ECHO Releasing Version %version%
-
-set dry=false
-
-IF %2.==. GOTO Begin
-IF %2==dry GOTO Dry
-
-:Dry
-
-ECHO.
-ECHO Performing dry run...
-ECHO.
-
-set dry=true
+ECHO Building Local Image Version %version%
 
 :Begin
 
@@ -53,17 +40,6 @@ set DOCKER_BUILDKIT=1
 docker build -f cdp4-database-bare-community-edition\Dockerfile -t stariongroup/cdp4-test-database-community-edition:%version% .\cdp4-database-bare-community-edition
 
 docker build -f cdp4-database-community-edition\Dockerfile -t stariongroup/cdp4-database-community-edition:%version% .\cdp4-database-community-edition
-
-IF %dry% equ true GOTO End
-
-ECHO.
-ECHO Pushing...
-ECHO.
-
-REM push
-docker push stariongroup/cdp4-test-database-community-edition:%version%
-
-docker push stariongroup/cdp4-database-community-edition:%version%
 
 :End
 
